@@ -2,8 +2,6 @@ Webinar ID  - 490878723
 ------------------------------------------
 Trainer - Vijay Prabhu
 ------------------------------------------
-Sai / Ashwin - Hyderabad / Nishanth - Fresher / Sharan / Shankar Nitesh / Rakesh - Mangalore / Harsh / Ravi / Prathap / Narasimha 
-------------------------------------------
 https://github.com/vijayprabhu04/wic-devops-mar-22
 ------------------------------------------
 
