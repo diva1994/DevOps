@@ -86,4 +86,17 @@ Introduction to GIT and Installation
 ==========================================
 Absent
 
-==========================================
+21/3/2022
+=========================================
+git Commands
+---------------
+*git init = Intialisation of git in the folder.
+*.git = if we delete we might lose all the data tracking on it.
+*git config --global user.email / --global user.name = updating name and email id
+*git status =  to know the status of the file whether tracked or not in git.
+*git add = it will add the files to tracking mode(Staging).
+*git commit -m "message" = to commit the file into the git.  -m - message
+*git log = to check the history of git
+*git log --oneline = log in oneline
+*git restore --staged <file> - to unstage the file
+*git checkout commitid = to moving between commits and its in readable mode only we shouldnt make any changes.
