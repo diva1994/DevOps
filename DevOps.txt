@@ -100,3 +100,22 @@ git Commands
 *git log --oneline = log in oneline
 *git restore --staged <file> - to unstage the file
 *git checkout commitid = to moving between commits and its in readable mode only we shouldnt make any changes.
+
+22/3/2022
+=========================================
+*/vagrant is a shared directory = We have to keep all files under this folder as we might lose the data in VM Ware.
+*git branch = to check current branch
+*Sprint Mode = After sprint meeting ur scrum master will allot the job and duration. Medium, Short & Large time
+*Sprint tickets will be created as per work alloted ith help of JIRA tool. Own ticket number.
+*git checkout -b <branchname> = To create a branch and to switch for branch
+*git checkout master = to switch for branch
+*Without merging all the edits will not be avaialble in master
+*git branch <nameofbranch> = to create a branch
+*git branch -D <branchname> = to delete the branch
+*After validating we can merge the branch to master branch
+*git checkout <commitid> = git checkout helps in move from commit to another commit
+*git-ignore = Its used to hide the sensitive data from others accessing it. Dont want to track newly created file for long period of time. It works only for newly created file after we created .gitignore file.
+*we have to create .gitignore file
+*we need to add the filename in the .gitingore 
+*if we delete the filename from .gitignore we will be able to see
+*git reset --soft(Can we reset the commit to master from sprint)
