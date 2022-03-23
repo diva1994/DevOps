@@ -119,3 +119,10 @@ git Commands
 *we need to add the filename in the .gitingore 
 *if we delete the filename from .gitignore we will be able to see
 *git reset --soft(Can we reset the commit to master from sprint)
+
+23/3/2022
+==========================================
+Git Hub
+*GitHub Action - We can triggered the code commit action. eg :- to trigger the ansible file
+*We need to add the personal token before adding the remote origin. From account setting > Developer Settings > Personal access tokens- we need to create the token here and copy and paste token as password.
+*To verify the pushed content to remote repo we can request for compare and change. Ths way is used for Pull request
