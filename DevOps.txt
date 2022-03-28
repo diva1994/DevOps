@@ -126,3 +126,36 @@ Git Hub
 *GitHub Action - We can triggered the code commit action. eg :- to trigger the ansible file
 *We need to add the personal token before adding the remote origin. From account setting > Developer Settings > Personal access tokens- we need to create the token here and copy and paste token as password.
 *To verify the pushed content to remote repo we can request for compare and change. Ths way is used for Pull request
+==========================================
+24/3/2022
+==========================================
+Absent
+
+==========================================
+25/3/2022
+==========================================
+*git pull = It helps to keep the local repo updated by remote repo by others
+*until we pull the data from remote to local repo we might get error if we trying to commit a file
+*git push origin head - to push the the files in the current branch. we should be in the current branch. We do this because branch name might be big and it might be problem to type and push the file.
+*git diff main <branch name> =  to see the changes between the files
+*git fork allows you to copy the original repo to our github account.
+*git clone <url> = git clone allos you to download the entire repo to local repo
+*git merge conflict = when 2 people changes the same file in the line so it ceates a conflict.
+
+==========================================
+28/3/2022
+==========================================
+Terraform
+------------------------------------------
+*See PPT first.
+*IAAS - In frastructure As A Service 
+*IAC - Infrastructure As Code.
+*Terraform is oopen-source infra as a code developed by hashicorp and Language used to define and provision Hashicorp Configuration Language (HCL)
+*Terraform helps in automation and Flexible Managing state open-source Auditable and easy to use
+*Terraform used to create the Infrastructure (virtuals machine) and not a configuration tool
+*Cloud adnostic and Platform agnostic
+*Terraform installed e have 2 components Terraform-Plugins (Providers & Provisioners) and Terrafom-Core
+*Terraform is written go programming language.
+*Terraform configuration files created in plugins and with help of RPC we will communicated with Terraform Core
+*Terraform Client Library communicates with cloud providers
+
