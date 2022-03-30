@@ -217,3 +217,38 @@ Plan   : Preview changes before apply
 Apply : Provision your infrastructure.
 
 Q&A :- It can be used on both on premises and cloud provider
+
+==========================================
+30/3/2022
+==========================================
+Terraform
+------------------------------------------
+1-Example
+
+provider "aws" {
+  access_key = 
+  secret_key = 
+  region     = "ap-south-1"
+}
+
+resource "aws_instance" "sample-machine" {
+  ami = "ami-0851b76e8b1bce90b"
+  instance_type = "t2.micro"
+}
+
+Commands
+===========================================
+*terraform init - intialisation terraform in directory- It nables all dependencie and api's and plugins
+*terraform validate - syntax error / checker
+*terraform plan - what code is going to do like a blue print
+*terraform apply - it will perform the action and also show what this code will do before running.
+*terraform destroy - this will destroy the described in your terraform file
+
+**it consider the files which is available in the terraform files and run the file. We ave option as targent where we can mention the file name and run the specific file
+** We have to intiate terraform in the directory where our tf file is located
+** We have to intiate again if I change the provider in the main file
+** It can access only 1 cloud provider in one file not multiple cloud providers
+** State file track all the machine information
+
+Q- Does terraform has information about destroyed terraform file
+
