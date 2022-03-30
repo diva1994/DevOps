@@ -159,3 +159,61 @@ Terraform
 *Terraform configuration files created in plugins and with help of RPC we will communicated with Terraform Core
 *Terraform Client Library communicates with cloud providers
 
+==========================================
+29/3/2022
+==========================================
+*How to create AWS Accout free tier account
+*How to install terraform with different OS.(Steps in git)
+*Terraform code works with hashicorp configuration language (HCL)
+*Terraform extention ends ith .tf eg:- main.tf
+*file name can be anything but extention should be .tf
+*Any program which is created cannot excute the program directly because it cannot directly converted into machine lang so we need to compili the file and convert the prog into machine language (i.e 0,1), Then only we can excute and this program is called non-compiled programming language. eg:-java
+*Any program which can directly excute the program without compiling and without  converting is called compiled programming language. eg:-python,golang
+*Pre-defined components which is buillt and kept is for ready use eg:-plugins
+*Declarative program languages are like scripts or pre-defined components which we need to use and pass the arguements.
+*The syntax of HCL :-
+#Blocks :- Block is a container for other contents.
+eg :- block {
+		   arguements_1="value"
+		   arguements_2="value"
+		 }
+#Arguements :- An arguements assigns a value to a particular name 
+eg :- arguemnets = "abc123"
+   -The identifier before (=) sign is arguement name and after (=) is expression
+   -The arguemnts can be String/Number/Bool/list/Map
+*Arguements cannot be changed which is pre-defined
+-----------------------------------------------------
+*Plugins :- The 2 main plugins are providers and provisioners
+**Providers :- It are responsible for understanding and take care of the api interaction and expose required resources. eg :- Cloud providers.
+eg :- provider "aws" {
+			    }
+
+	provider "azurerm" {
+			       }
+
+	provider "vsphere" {
+			       }
+
+**Resources :- it can anything which is in the providers resources eg storage network. It means infrastructure components.
+eg :- Resource "resource_type" "resource_name"{
+}
+
+**Using Provisioner you can do changes in instances.
+Common uses cases are :
+Copying some files to remote servers.
+Executing script on newly created instances.
+Inject bootstrapping to instances.
+Clean up some thing before machine is destroyed 
+
+**Output :- Shows values that are highlighted after terraform applies. This output is also maintained in terraform state file.
+
+**Terraform State :- Terraform state stores status of your managed infrastructure & configuration.
+This state is used by Terraform to map real world resources to your configuration, keep track of meta data and to improve performance of large scale infrastructure.
+Terraform state is generally stored in a file locally named as “terraform.tfstate”  but it can be also stored elsewhere which can work better in team environment..
+
+** Terraform workflow
+Write  : Author your code of how your infrastructure should be.
+Plan   : Preview changes before apply 
+Apply : Provision your infrastructure.
+
+Q&A :- It can be used on both on premises and cloud provider
