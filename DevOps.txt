@@ -255,3 +255,41 @@ Q- Does terraform has information about destroyed terraform file
 (Terraform initialized in an empty directory!
 The directory has no Terraform configuration files. You may begin working
 with Terraform immediately by creating Terraform configuration files.) but we need to create .tf file again we need to initiate it after that provider required plugins will be downloaded to local 
+
+==========================================
+31/3/2022
+==========================================
+*State-File - What infra we have created by terraform file will be stored in the statefile. It will keep the remote state of the infra.
+*Modified file will be compared with the terraform.tfstate
+*Name of the file terraform.tfstate. It will be json format
+*Terraform.tfstate.backup is the previous version of terraform.tfstate
+*idempotance - maths term
+*It will create only instances mentioned in config file it will be create multiple instance when we apply multiple times as well
+*terraform.lock.hcl file . it avoids collusion. preventing from others applying the code
+*tags = {Name = "https_server_01"} - for the name of the instance
+*To understand the historical changes it will save the the backup and statefile
+*terraform.tfstate and terraform.tfstate saves only 1 copy of latest & lastest - 1  and 3 apply will be updated and oldest will be removeds
+
+Example 2 
+------------------------------------------
+provider "aws" {
+    access_key = "xxxxxx"
+    secret_key = "xxxxxx"
+    region     = "ap-south-1"
+}
+
+resource "aws_instance" "ec2_instance" {
+    ami = "ami-0c1a7f89451184c8b"
+    instance_type = "t2.micro"
+    tags = {Name = "HTTPS SERVER-1"}
+}
+
+Try with HTTPS SERVER-1 and change name as 2 and 3 see the difference in terraform.tfstate and terraform.tfstate.backup
+
+*Variables
+------------------------------------
+**We need to declare the varibale and Elements store as an object and can be used in code
+**We can store the credentials and which is changing on daily basis
+**Types of variable - String , Number , List , Map and Set (It will remove duplicates and assign in chronological abd run)
+
+
