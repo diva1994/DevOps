@@ -251,4 +251,7 @@ Commands
 ** State file track all the machine information
 
 Q- Does terraform has information about destroyed terraform file
-
+**Terraform can be intialised on empty directory that is without .tf file. 
+(Terraform initialized in an empty directory!
+The directory has no Terraform configuration files. You may begin working
+with Terraform immediately by creating Terraform configuration files.) but we need to create .tf file again we need to initiate it after that provider required plugins will be downloaded to local 
