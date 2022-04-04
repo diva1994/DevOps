@@ -292,4 +292,28 @@ Try with HTTPS SERVER-1 and change name as 2 and 3 see the difference in terrafo
 **We can store the credentials and which is changing on daily basis
 **Types of variable - String , Number , List , Map and Set (It will remove duplicates and assign in chronological abd run)
 
+==========================================
+1/4/2022
+==========================================
+Absent
 
+==========================================
+4/4/2022
+==========================================
+*Variable should start varibale
+*We should varibale key word first then name. Inside the blocks we should name the variable as default 
+*So default varaible value which can be changed in command / CLI.
+*In older version type = string was mentioned as hashi corp was not able to understand the variable by itself now we can call directly without type
+*List should covered with square brackets
+*Map is coverred with flower brackets
+*Terraform console helps us go to into core directly and from there we can run basic command
+**Command for the core - terraform console we will be inside the core. To test we need to call the name of the variable
+
+*How to call a variable :- 
+** var."the varibale name"
+** "${var.varibalename}"
+** var.variablename [call_specific_item_in_list]
+** var.mymap.specific_key_name
+
+*Spilting the code into multiple file so we can easily debug the file
+*We should keep all the supporting files into same folder so we can call the variable without inputting the path
