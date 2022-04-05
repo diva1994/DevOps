@@ -317,3 +317,19 @@ Absent
 
 *Spilting the code into multiple file so we can easily debug the file
 *We should keep all the supporting files into same folder so we can call the variable without inputting the path
+
+==========================================
+5/4/2022
+==========================================
+Example - 6 - Providing variables from file
+------------------------------------------
+*terraform.tfvars - we will save the sensitive information in this file by default name
+*We need to create .gitignore and later push to the github and credentials and sensitive data will be in local repo
+*variable.tf file will load the data from the terraform.tfvars
+**Command :- terraform apply -var-file="nameof.tfvars"
+
+Credetials storing in terraform
+===========================================
+*We can create a hidden folder and store the credentials in that folder and we can fetch while calling
+*We need to install the aws cli and configure the credentials when we call it will directly from the aws profile 
+
